@@ -7,7 +7,7 @@ var resizeFrame = function() {
 };
 
 $(document).ready(function() {
-  $(window).resize(function() {
+  $(window).on("load resize", function() {
     resizeFrame();
   })
   resizeFrame();
